@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-option {
+  @apply p-1;
+}
+
+.select-value {
+  @apply bg-purple-400 p-3 w-40 flex justify-between;
+}
+
+.select-dropdown {
+  @apply relative -top-4 w-48  scroll-m-0 bg-purple-400 border-2 border-dashed border-black;
+}
+.select-option-container {
+  @apply hover:bg-pink-400 p-3 w-full;
+}
+.select-option {
+  @apply hover:bg-pink-400 w-full;
+}
