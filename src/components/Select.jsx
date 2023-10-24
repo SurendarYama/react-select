@@ -46,6 +46,15 @@ export default function Select({ options }) {
     });
   };
 
+  const handleSelectOptionClick = (e) => {
+    e.stopPropagation();
+    toggleSelectDropdown();
+    dispatch({
+      type: "set_select",
+      payload: { defaultValue: e.target.innerHTML },
+    });
+  };
+
   const selectRef = useRef(null);
 
   return (
@@ -67,7 +76,9 @@ export default function Select({ options }) {
               key={crypto.randomUUID()}
               onClick={handleChangeState}
             >
-              <span className="select-option">{option}</span>
+              <span className="select-option" onClick={handleSelectOptionClick}>
+                {option}
+              </span>
             </span>
           ))}
         </span>
