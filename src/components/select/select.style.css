@@ -1,0 +1,13 @@
+.select-value {
+  @apply bg-black p-3 w-40 flex justify-between;
+}
+
+.select-dropdown {
+  @apply relative -top-4 w-48  scroll-m-0 bg-black border-2 border-dashed border-slate-50;
+}
+.select-option-container {
+  @apply hover:bg-pink-400 p-3 w-full;
+}
+.select-option {
+  @apply text-slate-50  w-full p-1 cursor-pointer;
+}

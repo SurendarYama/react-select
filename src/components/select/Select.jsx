@@ -1,4 +1,5 @@
 import { useReducer, useEffect, useRef } from "react";
+import "./select.style.css";
 
 export default function Select({ options }) {
   const selectRef = useRef(null);
@@ -60,7 +61,7 @@ export default function Select({ options }) {
   return (
     <>
       <div className="select-value">
-        <span>{selectState.defaultValue}</span>
+        <span className="text-slate-50">{selectState.defaultValue}</span>
         <span
           className="font-bold text-pink-500  cursor-pointer"
           onClick={handleClick}
