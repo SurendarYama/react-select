@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-.select-option {
-  @apply p-1;
-}
+@tailwind utiliti
 
 .select-value {
   @apply bg-purple-400 p-3 w-40 flex justify-between;
@@ -17,5 +13,5 @@
   @apply hover:bg-pink-400 p-3 w-full;
 }
 .select-option {
-  @apply hover:bg-pink-400 w-full;
+  @apply hover:bg-pink-400 w-full p-1;
 }
