@@ -1,6 +1,8 @@
 import { useReducer, useEffect, useRef } from "react";
 
 export default function Select({ options }) {
+  const selectRef = useRef(null);
+
   const reducer = function (state, action) {
     switch (action.type) {
       case "set_select":
@@ -54,8 +56,6 @@ export default function Select({ options }) {
       payload: { defaultValue: e.target.innerHTML },
     });
   };
-
-  const selectRef = useRef(null);
 
   return (
     <>
