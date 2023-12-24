@@ -66,7 +66,7 @@ export default function Select({ options }) {
           className="font-bold text-pink-500  cursor-pointer"
           onClick={handleClick}
         >
-          +
+          {selectState.selectDropdownVisibility ? "^" : "+"}
         </span>
       </div>
       <span className="select-dropdown hidden" ref={selectRef}>
